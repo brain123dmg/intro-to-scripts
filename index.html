@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">    
+    </script>
+<script type="text/javascript" language="javascript">
+    $(document).ready(function(){
+        $("#get").click(function(event){
+            $.getJSON('Employee.json',function(emp){
+                $('#box').html('<p>Name: ' + emp.name + '</p>');
+                $('#box').append('<p>Age: '  +emp.age + '</p>');
+                $('#box').append('<p>Role: ' + emp.role + '</p>');
+                $('#box').append('<p>Company: ' + emp.company + '</p>');
+            });
+        });
+    });
+</script>
+</head>
+
+<body>
+   <div id="box" style="background-color: aqua;"></div>
+   <input type="button" id="get" value="Employee data"/>
+   
+</body>
+</html>

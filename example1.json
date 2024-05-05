@@ -1,0 +1,24 @@
+{
+    "students":
+    [
+       {"name":"steve",
+        "age":"20",
+        "city":"denver"},
+        
+        {"name":"Bob",
+        "age":"21",
+        "city":"Sacramento"},
+
+        {"name":"james",
+        "age":"22",
+        "city":"denver"},
+
+        {"name":"dame",
+        "age":"23",
+        "city":"denver"},
+
+        {"name":"stanley",
+        "age":"24",
+        "city":"denver"}
+    ]
+}
